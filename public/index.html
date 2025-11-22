@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple To-Do List</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #todo-form {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    #todo-input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #add-btn {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background: #0a84ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #add-btn:hover {
+      background: #006edc;
+    }
+
+    #todo-list {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .todo-item {
+      background: white;
+      margin: 8px 0;
+      padding: 12px 16px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .delete-btn {
+      background: #ff3b30;
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .delete-btn:hover {
+      background: #d63129;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>My To-Do List</h1>
+
+  <!-- Add Todo Form -->
+  <div id="todo-form">
+    <input id="todo-input" type="text" placeholder="Enter a new task..." />
+    <button id="add-btn">Add</button>
+  </div>
+
+  <!-- Todo List -->
+  <ul id="todo-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
